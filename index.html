@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto AgriComm AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form id="lead-form">
+    <h3>Contacto Comercial</h3>
+
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="plan">Plan de interés:</label>
+    <select id="plan" name="plan">
+      <option value="Starter">Starter</option>
+      <option value="Pro">Pro</option>
+      <option value="Enterprise">Enterprise</option>
+    </select>
+
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Enviar</button>
+    <p id="response-msg"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
